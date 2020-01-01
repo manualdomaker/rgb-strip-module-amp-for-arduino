@@ -1,1 +1,1 @@
-# rgb-strip-module-amp-for-arduino
+# RAUL HACKER CLUB - rgb-strip-module-amp-for-arduino
