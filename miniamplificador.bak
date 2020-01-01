@@ -1,0 +1,261 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BC547 Q1
+U 1 1 5E0CB2CE
+P 4500 4000
+F 0 "Q1" H 4700 4075 50  0000 L CNN
+F 1 "BC547" H 4700 4000 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 4700 3925 50  0001 L CIN
+F 3 "" H 4500 4000 50  0001 L CNN
+	1    4500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5E0CB473
+P 3950 4000
+F 0 "C1" H 3975 4100 50  0000 L CNN
+F 1 "1μ 50V" H 3975 3900 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P2.00mm" H 3988 3850 50  0001 C CNN
+F 3 "" H 3950 4000 50  0001 C CNN
+	1    3950 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5E0CB572
+P 4200 3700
+F 0 "R1" V 4280 3700 50  0000 C CNN
+F 1 "100K" V 4200 3700 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4130 3700 50  0001 C CNN
+F 3 "" H 4200 3700 50  0001 C CNN
+	1    4200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 5E0CB785
+P 3950 3450
+F 0 "C2" H 3975 3550 50  0000 L CNN
+F 1 "1μ 50V" H 3975 3350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P2.00mm" H 3988 3300 50  0001 C CNN
+F 3 "" H 3950 3450 50  0001 C CNN
+	1    3950 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C3
+U 1 1 5E0CBA4B
+P 3450 3450
+F 0 "C3" H 3475 3550 50  0000 L CNN
+F 1 "2.2μ 16V" H 3475 3350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P2.00mm" H 3488 3300 50  0001 C CNN
+F 3 "" H 3450 3450 50  0001 C CNN
+	1    3450 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01_Female CON1
+U 1 1 5E0CBB2C
+P 2150 3450
+F 0 "CON1" H 2150 3550 50  0000 C CNN
+F 1 "A0 OUT ARDUINO" H 2150 3350 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 2150 3450 50  0001 C CNN
+F 3 "" H 2150 3450 50  0001 C CNN
+	1    2150 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Audio-Jack-3 J1
+U 1 1 5E0CC0B4
+P 2350 4050
+F 0 "J1" H 2300 4225 50  0000 C CNN
+F 1 "Audio-Jack-3" H 2450 3980 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-41791-03_03x3.96mm_Straight" H 2600 4150 50  0001 C CNN
+F 3 "" H 2600 4150 50  0001 C CNN
+	1    2350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C4
+U 1 1 5E0CC187
+P 2150 4450
+F 0 "C4" H 2175 4550 50  0000 L CNN
+F 1 "0.22μ 100V" H 2175 4350 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P2.00mm" H 2188 4300 50  0001 C CNN
+F 3 "" H 2150 4450 50  0001 C CNN
+	1    2150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_SPDT SW1
+U 1 1 5E0CC358
+P 3250 4000
+F 0 "SW1" H 3250 4170 50  0000 C CNN
+F 1 "Singnal Select" H 3250 3800 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_NKK_G1xJP" H 3250 4000 50  0001 C CNN
+F 3 "" H 3250 4000 50  0001 C CNN
+	1    3250 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5E0CCA09
+P 4600 3150
+F 0 "R2" V 4680 3150 50  0000 C CNN
+F 1 "10K" V 4600 3150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4530 3150 50  0001 C CNN
+F 3 "" H 4600 3150 50  0001 C CNN
+	1    4600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_Series_PAD LED1
+U 1 1 5E0CD184
+P 5450 2800
+F 0 "LED1" H 5450 3025 50  0000 C CNN
+F 1 "LED STRIP" H 5450 2950 50  0000 C CNN
+F 2 "LEDs:LED_Rectangular_W5.0mm_H2.0mm-3pins" H 5350 2800 50  0001 C CNN
+F 3 "" H 5350 2800 50  0000 C CNN
+	1    5450 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01_Female CON2
+U 1 1 5E0CE182
+P 2150 2800
+F 0 "CON2" H 2150 2900 50  0000 C CNN
+F 1 "D6 IN ARDUINO" H 2150 2700 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 2150 2800 50  0001 C CNN
+F 3 "" H 2150 2800 50  0001 C CNN
+	1    2150 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L LEMO2 POWER1
+U 1 1 5E0CE9E1
+P 5450 4450
+F 0 "POWER1" H 5450 4650 50  0000 C CNN
+F 1 "5V IN" H 5450 4250 50  0000 C CNN
+F 2 "Connectors:JACK_ALIM" H 5450 4450 50  0001 C CNN
+F 3 "" H 5450 4450 50  0001 C CNN
+	1    5450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4000 4200 4000
+Wire Wire Line
+	4200 4000 4300 4000
+Wire Wire Line
+	4200 3850 4200 4000
+Connection ~ 4200 4000
+Wire Wire Line
+	4200 3450 4200 3550
+Wire Wire Line
+	4100 3450 4200 3450
+Wire Wire Line
+	4200 3450 4600 3450
+Wire Wire Line
+	4600 3300 4600 3450
+Wire Wire Line
+	4600 3450 4600 3800
+Connection ~ 4200 3450
+Wire Wire Line
+	3800 3450 3600 3450
+Wire Wire Line
+	2350 3450 3300 3450
+Wire Wire Line
+	2150 4150 2150 4300
+Wire Wire Line
+	2150 4600 2150 4800
+Wire Wire Line
+	2550 3950 2800 3950
+Wire Wire Line
+	2800 3950 2800 3900
+Wire Wire Line
+	2800 3900 3050 3900
+Wire Wire Line
+	2550 4050 2800 4050
+Wire Wire Line
+	2800 4050 2800 4100
+Wire Wire Line
+	2800 4100 3050 4100
+Wire Wire Line
+	3450 4000 3800 4000
+Wire Wire Line
+	4600 4200 4600 4500
+Wire Wire Line
+	4600 4500 4600 4800
+Connection ~ 4600 3450
+Wire Wire Line
+	4600 2950 5050 2950
+Connection ~ 4600 2950
+Wire Wire Line
+	4600 4800 2150 4800
+Wire Wire Line
+	4600 4500 5150 4500
+Connection ~ 4600 4500
+Wire Wire Line
+	5050 4400 5150 4400
+Wire Wire Line
+	5050 2950 5050 4100
+Wire Wire Line
+	5050 4100 5050 4400
+Wire Wire Line
+	4600 3000 4600 2950
+Wire Wire Line
+	5050 4100 5450 4100
+Wire Wire Line
+	5450 4100 5450 3050
+Connection ~ 5050 4100
+Wire Wire Line
+	5250 2800 2350 2800
+Wire Wire Line
+	2350 2800 2350 2800
+$EndSCHEMATC
